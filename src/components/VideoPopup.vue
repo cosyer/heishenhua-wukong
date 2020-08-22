@@ -15,7 +15,10 @@
       preload="auto"
       autoplay="autoplay"
     >
-      <!-- <source src="/video/b1/example1.mp4" type="video/mp4"> -->
+      <source
+        src="http://heishenhua.com/video/b1/example1.mp4"
+        type="video/mp4"
+      >
       您的浏览器不支持本视频播放，请尝试换一个浏览器或升级到最新版本
     </video>
     <img

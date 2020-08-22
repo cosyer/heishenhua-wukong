@@ -37,7 +37,7 @@
           :x5-video-ignore-metadata="true"
         >
           <source
-            src="/video/b1/video_WebTitle_batch.mp4"
+            src="http://heishenhua.com/video/b1/video_WebTitle_batch.mp4"
             type="video/mp4"
           >
           您的浏览器不支持本视频播放，请尝试换一个浏览器或升级到最新版本
@@ -75,7 +75,7 @@
           :x5-video-ignore-metadata="true"
         >
           <source
-            src="/video/b1/gamesci_wukong_preview.mp4"
+            src="http://heishenhua.com/video/b1/gamesci_wukong_preview.mp4"
             type="video/mp4"
           >
           您的浏览器不支持本视频播放，请尝试换一个浏览器或升级到最新版本
@@ -354,6 +354,8 @@ import VideoPopup from "../components/VideoPopup.vue";
 import gsData from "../gsData";
 import scroll from "../scroll";
 
+const videoPrefix = "http://heishenhua.com";
+
 export default {
   components: {
     HomeNav,
@@ -406,37 +408,37 @@ export default {
               thumbnail: "/img/Wallpaper/Wallpaper5.jpg",
               phoneThumbnail: "/img/Wallpaper/Wallpaper_mobile5.jpg",
               img: "/img/Wallpaper/Wallpaper5.jpg",
-              video: "/video/preview/video_Day1.mp4",
+              video: `${videoPrefix}/video/preview/video_Day1.mp4`,
             },
             {
               thumbnail: "/img/Wallpaper/Wallpaper6.jpg",
               phoneThumbnail: "/img/Wallpaper/Wallpaper_mobile6.jpg",
               img: "/img/Wallpaper/Wallpaper6.jpg",
-              video: "/video/preview/video_Day2.mp4",
+              video: `${videoPrefix}/video/preview/video_Day2.mp4`,
             },
             {
               thumbnail: "/img/Wallpaper/Wallpaper7.jpg",
               phoneThumbnail: "/img/Wallpaper/Wallpaper_mobile7.jpg",
               img: "/img/Wallpaper/Wallpaper7.jpg",
-              video: "/video/preview/video_Day3.mp4",
+              video: `${videoPrefix}video/preview/video_Day3.mp4`,
             },
             {
               thumbnail: "/img/Wallpaper/Wallpaper8.jpg",
               phoneThumbnail: "/img/Wallpaper/Wallpaper_mobile8.jpg",
               img: "/img/Wallpaper/Wallpaper8.jpg",
-              video: "/video/preview/video_Day4.mp4",
+              video: `${videoPrefix}/video/preview/video_Day4.mp4`,
             },
             {
               thumbnail: "/img/Wallpaper/Wallpaper9.jpg",
               phoneThumbnail: "/img/Wallpaper/Wallpaper_mobile9.jpg",
               img: "/img/Wallpaper/Wallpaper9.jpg",
-              video: "/video/preview/video_Day5.mp4",
+              video: `${videoPrefix}/video/preview/video_Day5.mp4`,
             },
             {
               thumbnail: "/img/Wallpaper/Wallpaper10.jpg",
               phoneThumbnail: "/img/Wallpaper/Wallpaper_mobile10.jpg",
               img: "/img/Wallpaper/Wallpaper10.jpg",
-              video: "/video/preview/video_Day6.mp4",
+              video: `${videoPrefix}/video/preview/video_Day6.mp4`,
             },
           ],
         },
@@ -814,7 +816,7 @@ export default {
       }
     },
     homeVideoPlay: function () {
-      this.homeVideo = "http://heishenhua.com/video/b1/gamesci_wukong.mp4";
+      this.homeVideo = `${videoPrefix}/video/b1/gamesci_wukong.mp4`;
       this.showHomeVideo = true;
     },
     joinUsClick: function () {
